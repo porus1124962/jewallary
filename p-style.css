@@ -1,0 +1,241 @@
+.p-container{
+	width: 100%;
+	height: 3224px;
+	margin-top: 60px;
+	background-color: whitesmoke;
+}
+
+#diamond{
+	width: 100%;
+	height: 800px;
+/*	padding-top: 50px;*/
+/*	background-image: url(pics/diamond-background-2.png);*/
+	background-image: url(pics/amatista-amethyst-beautiful-1121123.jpg);
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#gold{
+	width: 100%;
+	height: 800px;
+	padding-top: 50px;
+/*	background-color: yellow;*/
+	background-image: url(pics/decoration-engagement-gift-248077.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#silver{
+	width: 100%;
+	height: 800px;
+	padding-top: 50px;
+/*	background-color: silver;*/
+    background-image: url(pics/black-and-white-blur-close-up-908184.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#artificial{
+	width: 100%;
+	height: 800px;
+	padding-top: 50px;
+/*	background-color: red;*/
+	background-image: url(pics/blur-close-up-elegant-298852.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.p-card {
+	overflow: auto;
+	background-color: whitesmoke;
+	position: relative;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border: 1px solid #979292;
+	border-radius: 5px;
+	padding: 5px;
+  	width: 20%;
+	margin: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	transition: 0.3s;
+}
+
+.p-img {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+
+.p-price-overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(150,0,0,0.3), rgba(0,0,255,1));
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: 5s ease;
+}
+
+.p-card:hover .p-price-overlay {
+  	bottom: 0;
+	height: 100%;
+	transition: 0.5s ease;
+}
+
+.p-card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.p-p-text {
+	
+	color: orangered;
+	font-size: 40px;
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.p-card-name{
+	font-size: 22px;
+	color: red;
+	display: block;
+	background-color: white;
+}
+
+.sec-h{
+	font-size: 70px;
+	max-height: 80px;
+	overflow: hidden;
+    animation: color-change 10s infinite linear;
+	white-space: nowrap;
+/*	background-image: linear-gradient(to right,lightyellow,lightgreen);*/
+	display: block;
+	border: 5px;
+	border-style: outset;
+	border-color: darkkhaki;
+	border-radius: 15px;
+}
+
+.sec-h:hover{
+  animation-play-state:paused;
+}
+
+@keyframes color-change {
+    0% { color: red;
+	background-color: #D56062;
+	padding-left: 0%;
+	}
+	
+    20% { color: green;
+	background-color: lightgreen;
+	}
+	
+    40% { color: orangered;
+	background-color: #F9BEA3;
+	}
+	
+	60% { color: violet;
+	background-color: #F7C9FC;
+	}
+	
+	
+    80% { color: darkblue;
+	background-color: lightblue;
+	}
+	
+	
+    100% { color: red;
+	background-color: #D56062;
+	padding-left: 100%;
+	}
+}
+
+
+/*Modal Box CSS*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 30; /* Sit on top */
+   padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+	padding-top: 30px;
+    width: auto;
+	height: auto;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#label {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0);
+	transform:scale(0);} 
+    to {-webkit-transform:scale(1);
+	transform:scale(1);}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+} 
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/*End Modal Box CSS*/

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<link rel="shortcut icon" href="pics/asz.png"/>
+
+<title>Jewallary Shop</title>
+
+</head>
+
+<body>
+
+<header class="myHeader">
+	<img src="pics/asz.png" class="logo" alt="LOGO"/>
+	
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html" class="active">Home</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Products 
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="product.html#diamond">Diamond </a>
+			<a href="product.html#gold">Gold </a>
+			<a href="product.html#silver">Silver </a>
+			<a href="product.html#artificial">Artificial </a>
+		</div>
+	  </div>
+	  <a href="contact.html">Contact Us</a>
+	  <a href="about us.html">About</a>
+	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onClick="resNavClick()">&#9776;</a>
+	</div>
+
+<script>
+function resNavClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</header>
+
+<section class="girl">
+	<center><div class="long-card">
+  		<img src="pics/girl-necklaceF.jpg" alt="Necklace" style="width:100%">
+  		<div class="name_price">
+    	<h4><b>White Diamond</b></h4> 
+    	<p style="color: red">US 1200K $</p> 
+  		</div>
+	</div></center>
+</section>
+
+<section class="main">
+	
+	<div class="card"  style="float: left">
+  		<img src="pics/diamond1.jpg" alt="Avatar" style="width:100%">
+  		<div class="name_price">
+    	<h4><b>Diamond Zircon</b></h4> 
+    	<p style="color: red">US 120K $</p> 
+  		</div>
+	</div>
+	
+	<div class="mid-card"  style="float: left">
+  		<img src="pics/gold1.jpg" alt="Avatar" style="width:100%">
+  		<div class="name_price">
+    	<h4><b>Gold Necklace</b></h4>
+    	<p style="color: red">US 90K $</p> 
+  		</div>
+	</div>
+	
+	<div class="card"  style="float: left">
+  		<img src="pics/silver1.jpg" alt="Avatar" style="width:100%">
+  		<div class="name_price">
+    	<h4><b>Lead Bridal</b></h4>
+    	<p style="color: red">US 10K $</p> 
+  		</div>
+	</div>
+	
+</section>
+
+<footer>
+		<center><p>All Rights Reserved By ASZ Corporation...</p></center>
+</footer>
+
+</body>
+</html>
